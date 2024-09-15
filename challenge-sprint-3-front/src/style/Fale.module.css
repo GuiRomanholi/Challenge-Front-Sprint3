@@ -1,0 +1,105 @@
+.section1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h1 {
+    font-weight: 600;
+    color: #414040;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.headline p {
+    text-align: left;
+    line-height: 1.6;
+    color: #808080;
+    max-width: 100%;
+}
+
+.imgHeadline {
+    margin-right: 5%;
+    flex: 40%;
+    text-align: right;
+    position: relative;
+    top: 7px;
+}
+
+.img1 {
+    max-width: 100%;
+}
+
+.section2 {
+    background-color: #e6e6e6;
+}
+
+.email {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 10%;
+    padding-top: 7%;
+}
+
+.textEmail {
+    margin-left: 1%;
+    margin-top: 1%;
+    text-align: left;
+}
+
+.whats {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-bottom: 7%;
+}
+
+.textWhats {
+    margin-left: 0.5%;
+    margin-top: 1%;
+    text-align: left;
+}
+
+.section2 h2 {
+    padding: 0;
+    margin: 0;
+    color: #414040;
+}
+
+.section2 p {
+    margin-top: 1%;
+    color: #414040;
+}
+
+.article {
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.article h2 {
+    font-size: 30px;
+    color: #414040;
+    padding-top: 7%;
+}
+
+.article p {
+    text-align: center;
+    color: #808080;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 1.6;
+    padding-bottom: 7%;
+}
