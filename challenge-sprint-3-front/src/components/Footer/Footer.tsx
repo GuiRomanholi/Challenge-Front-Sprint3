@@ -15,7 +15,7 @@ export default function Footer() {
                 </li>
                 <p className={styles.barraSeparacao}>|</p>
                 <li>
-                    <a href="https://github.com/1TDSPM-ChallengeIGC/challenge_front-end_v2" target="_blank">
+                    <a href="https://github.com/GuiRomanholi/Challenge-Front-Sprint3" target="_blank">
                         <img src={github_logo} alt="GitHub Logo" />
                     </a>
                 </li>
