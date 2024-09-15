@@ -1,0 +1,115 @@
+
+.section1 {
+    display: flex;
+    flex-direction: row; /* Alinha os itens em linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding-top: 100px;
+}
+
+.headline {
+    flex: 1; /* Permite que a div ocupe o máximo de espaço disponível */
+    margin-left: 28px;
+}
+
+.headline h1 {
+    font-weight: 600;
+    font-size: 80px;
+    color: #414040;
+}
+
+.h1_1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.h1_2 {
+    display: inline-block;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.headline p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #808080;
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    background: #0874f8;
+    padding: 15px 27px;
+    color: white;
+    border-radius: 5px;
+    border: white;
+    text-decoration: none;
+    margin-top: 20px; /* Espaçamento superior para o botão */
+}
+
+.btn:hover {
+    border: none;
+    background: #414040;
+}
+
+.img1 {
+    max-width: 100%;
+}
+
+.section2{
+    display: inline-block;
+    margin-top: 80px;
+    padding: 5%;
+    text-align: center;
+    background-color: #e6e6e6;
+    
+}
+
+.section2 h2{
+    font-size: 30px;
+    margin: 0;
+    color: #414040;
+    font-weight: 400;
+
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 2px solid rgb(8, 116, 247);
+    border-radius:10px;
+    color: #414040;
+}
+
+.article{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+}
+
+.article h2{
+    font-size: 30px;
+    color: #414040;
+}
+
+.article p{
+    color: #808080;
+    width: 70%;
+    padding: 0.5%;
+    margin-left: 15%;
+    line-height: 1.6;
+}

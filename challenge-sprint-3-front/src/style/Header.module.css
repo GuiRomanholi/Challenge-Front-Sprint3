@@ -1,7 +1,9 @@
+
 .navBar {
     top: 0; /* Alinha o cabeçalho ao topo */
     left: 0; /* Alinha o cabeçalho à esquerda */
     width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+    height: 150px;
     background-color:  #e6e6e6; /* Defina a cor de fundo, se necessário */
     z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
     display: flex; /* Usa flexbox para alinhar itens */
@@ -10,7 +12,9 @@
 }
 
 .logo img {
-    height: 40px; /* Ajuste a altura da imagem do logo conforme necessário */
+    height: 50px; /* Aumenta a altura da imagem do logo conforme necessário */
+    margin-top: 30px; /* Ajuste a altura da imagem do logo conforme necessário */
+    margin-left: 30px;
 }
 
 .menu {
@@ -51,3 +55,8 @@
      color: #0874f8;
      border-bottom: 3px solid #414040;
  }
+
+.menu button:hover{
+    border: none;
+    background: #414040;
+}

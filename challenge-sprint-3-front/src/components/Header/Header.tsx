@@ -15,7 +15,7 @@ export default function Header(){
                         <Link to={"/sobre"}>Sobre nós</Link>
                         <Link to={"/fale"}>Fale conosco</Link>
                         <Link to={"/faq"}>FAQ</Link>
-                        <button>Entrar</button>
+                        <button>Iniciar Sessão</button>
                     </li>            
                 </div>
             </nav>
