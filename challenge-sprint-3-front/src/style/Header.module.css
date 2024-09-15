@@ -1,0 +1,53 @@
+.navBar {
+    top: 0; /* Alinha o cabeçalho ao topo */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+    background-color:  #e6e6e6; /* Defina a cor de fundo, se necessário */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-between; /* Espaça o conteúdo do cabeçalho */
+    padding: 10px; /* Adiciona um pouco de padding, ajuste conforme necessário */
+}
+
+.logo img {
+    height: 40px; /* Ajuste a altura da imagem do logo conforme necessário */
+}
+
+.menu {
+    display: flex; /* Usa flexbox para os itens de menu */
+    align-items: center; /* Alinha verticalmente os itens do menu */
+}
+
+.menu li {
+    list-style-type: none; /* Remove a bolinha dos itens da lista */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Alinha os itens na horizontal */
+}
+
+.menu li a {
+    margin-right: 20px; /* Espaça os links do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Define a cor do texto dos links */
+}
+
+.menu li button {
+    /* Adicione estilo ao botão, se necessário */
+    background-color: #007bff; /* Exemplo de cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Adiciona padding ao botão */
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.menu a{
+    color: #414040; 
+    text-decoration: none;
+    padding: 20px 16px;
+ }
+ 
+ .menu a:hover{
+     color: #0874f8;
+     border-bottom: 3px solid #414040;
+ }

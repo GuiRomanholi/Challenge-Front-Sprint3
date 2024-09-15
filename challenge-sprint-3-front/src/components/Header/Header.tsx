@@ -1,19 +1,22 @@
-import Logo from '../../../public/img/logo_ccs.png'
+import Logo from '../../../public/img/logo_ccs.png';
 import { Link } from 'react-router-dom';
-
+import styles from '../../style/Header.module.css';
 
 export default function Header(){
     return(
         <header>
-            <nav>
-                <div>
+            <nav className={styles.navBar}>
+                <div className={styles.logo}>
                     <img src={Logo} alt="logo_principal"/>
                 </div>
-                <div>
-                    <li><Link to={"/"}>Home</Link></li>
-                    <li><Link to={"/sobre"}>Sobre nós</Link></li>
-                    <li><Link to={"/fale"}>Fale conosco</Link></li>
-                    <li><Link to={"/faq"}>FAQ</Link></li>            
+                <div className={styles.menu}>
+                    <li>
+                        <Link to={"/"}>Home</Link>
+                        <Link to={"/sobre"}>Sobre nós</Link>
+                        <Link to={"/fale"}>Fale conosco</Link>
+                        <Link to={"/faq"}>FAQ</Link>
+                        <button>Entrar</button>
+                    </li>            
                 </div>
             </nav>
         </header>

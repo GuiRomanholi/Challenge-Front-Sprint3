@@ -1,4 +1,4 @@
-import foto_faq from '../../../public/img/fotoFaq03.png'
+import foto_faq from '../../../public/img/fotoFaq03.png';
 
 export default function Faq(){
 

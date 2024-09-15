@@ -1,0 +1,45 @@
+footer{
+    height: 350px;
+    background-color: #175aac;
+    text-align: center;
+    justify-content: center;
+}
+
+.footerConteiner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 70px 30px 20px 15px;
+}
+
+.footerConteiner li {
+    list-style-type: none; /* Remove os pontos dos itens da lista */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    display: inline; /* Exibe os itens da lista em linha */
+}
+
+footer img{
+    width: 35px;
+    margin-right: 3%;
+}
+
+.logoFooter img{
+    width: 90%;
+}
+
+footer a{
+    margin: 10px;
+}
+
+footer p{
+    color: white;
+
+}
+
+.barraSeparacao{
+    width: 40px;
+    font-size: 200%;
+}

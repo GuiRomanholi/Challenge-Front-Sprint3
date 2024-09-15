@@ -1,8 +1,8 @@
 
-import sobre_nos from '../../../public/img/fotoSobreNos02.png'
-import cristian_foto from '../../../public/img/foto_cristan.png'
-import guilherme_foto from '../../../public/img/foto_guilherme.png'
-import igor_foto from '../../../public/img/foto_igor.png'
+import sobre_nos from '../../../public/img/fotoSobreNos02.png';
+import cristian_foto from '../../../public/img/foto_cristan.png';
+import guilherme_foto from '../../../public/img/foto_guilherme.png';
+import igor_foto from '../../../public/img/foto_igor.png';
 
 
 

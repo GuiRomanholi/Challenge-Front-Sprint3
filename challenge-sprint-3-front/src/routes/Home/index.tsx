@@ -1,8 +1,8 @@
 
-import foto_home from '../../../public/img/fotohome1-ai.png'
-import icon_relatorio from '../../../public/img/icone_relatorio_azul.png'
-import icon_gps from '../../../public/img/icone_gps_azul.png'
-import icon_oficina from '../../../public/img/icone_oficina_azul.png'
+import foto_home from '../../../public/img/fotohome1-ai.png';
+import icon_relatorio from '../../../public/img/icone_relatorio_azul.png';
+import icon_gps from '../../../public/img/icone_gps_azul.png';
+import icon_oficina from '../../../public/img/icone_oficina_azul.png';
 
 
 
