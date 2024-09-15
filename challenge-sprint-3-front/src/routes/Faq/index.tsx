@@ -1,13 +1,14 @@
 import foto_faq from '../../../public/img/fotoFaq03.png';
+import styles from '../../style/Faq.module.css';
 
 export default function Faq(){
 
     return(
         <div>
-            <section>
+            <section className={styles.section}>
                 <img src={foto_faq} alt="foto_faq03"/>
             </section>
-            <article>
+            <article className={styles.article}>
                 <h1>O que é este site?</h1>
                 <p>É um site criado para guinchos serem chamado mais rápido via chatbot e ao mesmo tempo fazer um formulário do problema do carro e enviá-lo ao mecânico.</p>
                 <hr/>

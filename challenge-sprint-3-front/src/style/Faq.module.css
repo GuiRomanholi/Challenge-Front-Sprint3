@@ -1,0 +1,36 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.section img {
+    width: 30%;
+}
+
+.article {
+    display: flex; /* Adicione isso se você quiser usar flexbox */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.article h1 {
+    color: #414040;
+}
+
+.article p {
+    color: #808080;
+    width: 50%;
+    padding: 0.5%;
+    margin-left: 4%;
+}
+
+.article hr {
+    width: 80%;
+}
