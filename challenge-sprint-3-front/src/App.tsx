@@ -8,7 +8,6 @@ export default function App(){
       <div>
         <Header/>
         <Outlet/>
-        <h1>Oi</h1>
         <Footer/>
       </div>
   );
