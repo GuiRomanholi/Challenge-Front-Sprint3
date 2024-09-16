@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 export default function Cadastro(){
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
-    const navigate = useNavigate(); // Hook para navegação
+    const navigate = useNavigate();
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -25,14 +25,13 @@ export default function Cadastro(){
             return;
         }
 
-        // Se as validações passarem, exibe a mensagem de sucesso
         setIsSubmitted(true);
         setErrorMessage("");
 
-        // Após 3 segundos, redireciona para a página de login
+
         setTimeout(() => {
             navigate('/login');
-        }, 3000); // 3000ms = 3 segundos
+        }, 3000);
     };
 
 

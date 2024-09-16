@@ -9,11 +9,10 @@ export default function Login() {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        // Após o submit, apenas definimos isLoggedIn como true
         setIsLoggedIn(true);
 
         setTimeout(() => {
-            navigate('/'); // Certifique-se de que "/home" seja o caminho correto para sua página Home
+            navigate('/');
         }, 2000);
     };
 
