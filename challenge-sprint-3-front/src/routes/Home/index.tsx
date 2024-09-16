@@ -4,6 +4,7 @@ import icon_relatorio from '../../../public/img/icone_relatorio_azul.png';
 import icon_gps from '../../../public/img/icone_gps_azul.png';
 import icon_oficina from '../../../public/img/icone_oficina_azul.png';
 import styles from '../../style/Home.module.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +17,7 @@ export default function Home(){
                     <h1 className={styles.h1_1}>Consertos <strong>rápidos</strong>,</h1>
                     <h1 className={styles.h1_2}>com a <strong>força da IA!</strong></h1>
                     <p>Descubra a nova era dos consertos automotivos com nossa <strong>tecnologia de IA</strong>. Experimente um serviço<strong> rápido, preciso e confiável</strong>, feito sob medida para as necessidades do seu carro. Comece agora e sinta a diferença!</p>
-                    <button className={styles.btn}>Começar</button>
+                    <Link className={styles.a} to="/login">Começar</Link>
                 </div>
                 <div className={styles.imgHeadline}>
                     <img src={foto_home} alt="foto_home" />

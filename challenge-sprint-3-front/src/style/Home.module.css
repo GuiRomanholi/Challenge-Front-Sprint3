@@ -34,7 +34,7 @@
     max-width: 100%;
 }
 
-.btn {
+.a {
     display: inline-block;
     background: #0874f8;
     padding: 1rem 1.7rem;
@@ -45,7 +45,7 @@
     margin-top: 1.25rem;
 }
 
-.btn:hover {
+.a:hover {
     background: #0056b3;
 }
 
