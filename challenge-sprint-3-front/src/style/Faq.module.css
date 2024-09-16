@@ -10,8 +10,8 @@
 }
 
 .article {
-    display: flex; /* Adicione isso se você quiser usar flexbox */
-    flex-direction: column; /* Alinha o conteúdo em coluna */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;

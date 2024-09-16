@@ -1,8 +1,8 @@
-/* Estilos principais */
+
 .section1 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; /* Espaçamento adequado entre texto e imagem */
+    justify-content: space-between;
     align-items: center;
     padding-top: 170px;
     padding-left: 10%;
@@ -10,7 +10,7 @@
 }
 
 .headline {
-    flex: 1; /* O texto ocupa metade da largura */
+    flex: 1;
     margin-right: 2rem;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .imgHeadline {
-    flex: 1; /* A imagem ocupa metade da largura */
+    flex: 1;
     text-align: right;
 }
 
@@ -39,7 +39,7 @@
     height: auto;
 }
 
-/* Seção de Contato */
+
 .section2 {
     background-color: #e6e6e6;
     display: flex;
@@ -70,7 +70,7 @@
     color: #414040;
 }
 
-/* Estilo do artigo */
+
 .article {
     text-align: center;
     justify-content: center;
@@ -89,10 +89,10 @@
     line-height: 1.6;
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
     .section1 {
-        flex-direction: column; /* Empilha o texto e a imagem em telas menores */
+        flex-direction: column;
         text-align: center;
     }
 
@@ -166,7 +166,7 @@
     }
 
     .imgHeadline img {
-        width: 80%; /* Reduz o tamanho da imagem em dispositivos menores */
+        width: 80%;
         margin: 0 auto;
     }
 
