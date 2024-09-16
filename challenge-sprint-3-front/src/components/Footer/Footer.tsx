@@ -21,7 +21,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/concertcars_of" target="_blank" rel="noopener noreferrer">
                             <img src={logo_insta} alt="Instagram Logo" />
                         </a>
                     </li>
