@@ -1,31 +1,31 @@
-.headline{
+/* Estilos principais */
+.headline {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     padding-top: 150px;
 }
 
-.headline img{
+.headline img {
     width: 30%;
     margin-top: 3%;
 }
 
-.article{
+.article {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 7%;
     margin-left: 10%;
     margin-right: 10%;
-   
 }
 
-.article h1{
+.article h1 {
     font-size: 30px;
     color: #414040;
 }
 
-.article p{
+.article p {
     color: #808080;
     width: 70%;
     padding: 0.5%;
@@ -33,7 +33,7 @@
     line-height: 1.6;
 }
 
-.section2{
+.section2 {
     display: inline-block;
     margin-top: 8%;
     padding: 5%;
@@ -41,27 +41,102 @@
     background-color: #e6e6e6;
 }
 
-.section2 h2{
+.section2 h2 {
     font-size: 30px;
     margin-top: 0%;
     color: #414040;
 }
 
-
-.section2 img{
+.section2 img {
     width: 50%;
     border-radius: 10%;
     border: 3px solid #0874f8;
 }
 
-.time{
-    display: inline-block;
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 3%;
 }
 
-
-.card{
-    display: inline-block;
+.card {
     width: 30%;
+    margin: 1.5%;
     color: #414040;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .headline img {
+        width: 50%; /* Aumenta o tamanho da imagem para tablets */
+    }
+
+    .article h1 {
+        font-size: 1.875rem; /* Ajusta o tamanho do título */
+    }
+
+    .article p {
+        width: 80%; /* Aumenta a largura do texto */
+        margin-left: 10%; /* Ajusta a margem para centralizar o texto */
+    }
+
+    .section2 h2 {
+        font-size: 1.875rem; /* Ajusta o tamanho do título na seção do time */
+    }
+
+    .card {
+        width: 45%; /* Reduz o tamanho do card para caber melhor na tela */
+    }
+}
+
+@media (max-width: 768px) {
+    .headline img {
+        width: 60%; /* Aumenta o tamanho da imagem para dispositivos menores */
+    }
+
+    .article h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título para dispositivos menores */
+    }
+
+    .article p {
+        font-size: 0.875rem; /* Reduz o tamanho do texto */
+        width: 90%; /* Ajusta a largura do texto para 90% */
+        margin-left: 5%; /* Alinha o texto centralmente */
+    }
+
+    .section2 h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título */
+    }
+
+    .card {
+        width: 90%; /* Cada card ocupa 90% da tela em dispositivos menores */
+        margin: 1rem auto; /* Adiciona espaço entre os cards */
+    }
+}
+
+@media (max-width: 576px) {
+    .headline img {
+        width: 80%; /* Aumenta a imagem em dispositivos muito pequenos */
+    }
+
+    .article h1 {
+        font-size: 1.25rem; /* Diminui o título */
+    }
+
+    .article p {
+        font-size: 0.75rem; /* Reduz ainda mais o tamanho do texto */
+        width: 100%; /* O texto ocupa toda a largura */
+        margin-left: 0; /* Remove margens laterais */
+    }
+
+    .section2 h2 {
+        font-size: 1.25rem; /* Reduz o título da seção */
+    }
+
+    .card {
+        width: 100%; /* Cada card ocupa 100% da tela */
+        margin: 1rem 0; /* Espaçamento adequado entre os cards */
+    }
 }
