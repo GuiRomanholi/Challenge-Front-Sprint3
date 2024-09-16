@@ -42,7 +42,7 @@
     font-size: 1rem;
 }
 
-.menu li button {
+.menu li a {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -104,7 +104,7 @@
         width: 100%;
     }
 
-    .menu li button {
+    .menu li a {
         width: 100%;
         padding: 10px;
         font-size: 1.2rem;
@@ -120,7 +120,7 @@
         font-size: 1rem;
     }
 
-    .menu li button {
+    .menu li a {
         font-size: 1rem;
     }
 }

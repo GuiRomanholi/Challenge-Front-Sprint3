@@ -9,6 +9,7 @@ import Faq from './routes/Faq/index.tsx'
 import Fale from './routes/FaleConosco/index.tsx'
 import Sobre from './routes/SobreNos/index.tsx'
 import Error from './routes/Error/index.tsx'
+import Login from './routes/Login/index.tsx'
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path:"/sobre",
         element: <Sobre/>,
+      },
+      {
+        path:"/login",
+        element: <Login/>,
       }
     ]
   }

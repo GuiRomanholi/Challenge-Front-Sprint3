@@ -24,7 +24,7 @@ export default function Header() {
                             <Link to="/faq">FAQ</Link>
                         </li>
                         <li>
-                            <button>Iniciar Sessão</button>
+                            <Link to="/login">Iniciar Sessão</Link>
                         </li>
                     </ul>
                 </div>
