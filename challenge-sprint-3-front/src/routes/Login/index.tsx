@@ -1,5 +1,6 @@
 
 
+import { Link } from 'react-router-dom';
 import styles from '../../style/Login.module.css';
 
 export default function Login() {
@@ -12,7 +13,7 @@ export default function Login() {
                     name="txtLogin"
                     id="idLogin"
                     className={styles.inputField}
-                    placeholder="CPF ou E-mail"
+                    placeholder="Usuário"
                     required
                 />
                 <input
@@ -24,7 +25,7 @@ export default function Login() {
                     required
                 />
                 <button type="submit" className={styles.submitButton}>Entrar</button>
-                <a href="../pag-cadastro/cadastro.html" className={styles.createAccountLink} title="Criar uma conta">Criar uma conta</a>
+                <Link className={styles.createAccountLink} to={"/cadastro"}>Criar uma conta</Link>
             </form>
         </div>
     );

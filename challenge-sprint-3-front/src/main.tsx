@@ -10,6 +10,7 @@ import Fale from './routes/FaleConosco/index.tsx'
 import Sobre from './routes/SobreNos/index.tsx'
 import Error from './routes/Error/index.tsx'
 import Login from './routes/Login/index.tsx'
+import Cadastro from './routes/Cadastro/index.tsx'
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path:"/login",
         element: <Login/>,
+      },
+      {
+        path:"/cadastro",
+        element: <Cadastro/>,
       }
     ]
   }
