@@ -14,6 +14,8 @@
 
 Este projeto é um protótipo criado no Figma, desenvolvido utilizando React e TypeScript para a codificação, e CSS3 Modules para a estilização. O projeto inclui quatro páginas principais:
 
+link do figma: https://www.figma.com/design/kIeSv2r9V96nXgtUbxfN7T/Consert-Car%C2%B4s---Sprint-3?node-id=0-1&t=sHi49Z1KazC7DNNt-1
+
 - [x]  **Página Principal**
 - [x] **Sobre Nós**
 - [x]  **Fale Conosco**
