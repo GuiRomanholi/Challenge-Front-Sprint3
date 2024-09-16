@@ -36,26 +36,29 @@
 }
 
 .menu li a {
-    margin-right: 20px;
     text-decoration: none;
     color: #000;
     font-size: 1rem;
-}
-
-.menu li a {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 4px;
     font-size: 1rem;
 }
 
-/* Hover effects */
+/* Estilo específico para o item "Iniciar Sessão" */
+.menu li.login a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.menu li.login a:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-bottom: none;
+}
+
+/* Hover effects para os demais links */
 .menu a {
-    color: #414040;
-    padding: 10px 16px;
+    color: #0056b3;
 }
 
 .menu a:hover {
@@ -63,12 +66,8 @@
     border-bottom: 3px solid #414040;
 }
 
-.menu button:hover {
-    background: #414040;
-}
-
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 979px) {
     .navBar {
         flex-direction: column;
         height: auto;
@@ -103,21 +102,11 @@
         font-size: 1.2rem;
         width: 100%;
     }
-
-    .menu li a {
-        width: 100%;
-        padding: 10px;
-        font-size: 1.2rem;
-    }
 }
 
 @media (max-width: 576px) {
     .navBar {
         padding: 10px;
-    }
-
-    .menu li a {
-        font-size: 1rem;
     }
 
     .menu li a {

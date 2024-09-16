@@ -23,7 +23,7 @@ export default function Header() {
                         <li>
                             <Link to="/faq">FAQ</Link>
                         </li>
-                        <li>
+                        <li className={styles.login}>
                             <Link to="/login">Iniciar Sessão</Link>
                         </li>
                     </ul>
