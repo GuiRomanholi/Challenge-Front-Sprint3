@@ -1,4 +1,4 @@
-/* Estilos principais */
+
 .headline {
     display: flex;
     justify-content: center;
@@ -67,76 +67,76 @@
     text-align: center;
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
     .headline img {
-        width: 50%; /* Aumenta o tamanho da imagem para tablets */
+        width: 50%;
     }
 
     .article h1 {
-        font-size: 1.875rem; /* Ajusta o tamanho do título */
+        font-size: 1.875rem;
     }
 
     .article p {
-        width: 80%; /* Aumenta a largura do texto */
-        margin-left: 10%; /* Ajusta a margem para centralizar o texto */
+        width: 80%;
+        margin-left: 10%;
     }
 
     .section2 h2 {
-        font-size: 1.875rem; /* Ajusta o tamanho do título na seção do time */
+        font-size: 1.875rem;
     }
 
     .card {
-        width: 45%; /* Reduz o tamanho do card para caber melhor na tela */
+        width: 45%;
     }
 }
 
 @media (max-width: 768px) {
     .headline img {
-        width: 60%; /* Aumenta o tamanho da imagem para dispositivos menores */
+        width: 60%;
     }
 
     .article h1 {
-        font-size: 1.5rem; /* Reduz o tamanho do título para dispositivos menores */
+        font-size: 1.5rem;
     }
 
     .article p {
-        font-size: 0.875rem; /* Reduz o tamanho do texto */
-        width: 90%; /* Ajusta a largura do texto para 90% */
-        margin-left: 5%; /* Alinha o texto centralmente */
+        font-size: 0.875rem;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .section2 h2 {
-        font-size: 1.5rem; /* Ajusta o tamanho do título */
+        font-size: 1.5rem;
     }
 
     .card {
-        width: 90%; /* Cada card ocupa 90% da tela em dispositivos menores */
-        margin: 1rem auto; /* Adiciona espaço entre os cards */
+        width: 90%;
+        margin: 1rem auto;
     }
 }
 
 @media (max-width: 576px) {
     .headline img {
-        width: 80%; /* Aumenta a imagem em dispositivos muito pequenos */
+        width: 80%;
     }
 
     .article h1 {
-        font-size: 1.25rem; /* Diminui o título */
+        font-size: 1.25rem;
     }
 
     .article p {
-        font-size: 0.75rem; /* Reduz ainda mais o tamanho do texto */
-        width: 100%; /* O texto ocupa toda a largura */
-        margin-left: 0; /* Remove margens laterais */
+        font-size: 0.75rem;
+        width: 100%;
+        margin-left: 0;
     }
 
     .section2 h2 {
-        font-size: 1.25rem; /* Reduz o título da seção */
+        font-size: 1.25rem;
     }
 
     .card {
-        width: 100%; /* Cada card ocupa 100% da tela */
-        margin: 1rem 0; /* Espaçamento adequado entre os cards */
+        width: 100%;
+        margin: 1rem 0;
     }
 }
