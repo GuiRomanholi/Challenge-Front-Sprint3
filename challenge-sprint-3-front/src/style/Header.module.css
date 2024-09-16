@@ -1,62 +1,126 @@
-
+/* Estilos principais */
 .navBar {
-    top: 0; /* Alinha o cabeçalho ao topo */
-    left: 0; /* Alinha o cabeçalho à esquerda */
-    width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
-    height: 150px;
-    background-color:  #e6e6e6; /* Defina a cor de fundo, se necessário */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
-    display: flex; /* Usa flexbox para alinhar itens */
-    justify-content: space-between; /* Espaça o conteúdo do cabeçalho */
-    padding: 10px; /* Adiciona um pouco de padding, ajuste conforme necessário */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #e6e6e6;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .logo img {
-    height: 50px; /* Aumenta a altura da imagem do logo conforme necessário */
-    margin-top: 30px; /* Ajuste a altura da imagem do logo conforme necessário */
-    margin-left: 30px;
+    height: 50px;
+    margin-left: 10px;
 }
 
+/* Menu */
 .menu {
-    display: flex; /* Usa flexbox para os itens de menu */
-    align-items: center; /* Alinha verticalmente os itens do menu */
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li {
-    list-style-type: none; /* Remove a bolinha dos itens da lista */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
-    display: flex; /* Alinha os itens na horizontal */
+    margin: 0 10px;
 }
 
 .menu li a {
-    margin-right: 20px; /* Espaça os links do menu */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #000; /* Define a cor do texto dos links */
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
 }
 
 .menu li button {
-    /* Adicione estilo ao botão, se necessário */
-    background-color: #007bff; /* Exemplo de cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
-    padding: 10px 20px; /* Adiciona padding ao botão */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
-.menu a{
-    color: #414040; 
-    text-decoration: none;
-    padding: 20px 16px;
- }
- 
- .menu a:hover{
-     color: #0874f8;
-     border-bottom: 3px solid #414040;
- }
+/* Hover effects */
+.menu a {
+    color: #414040;
+    padding: 10px 16px;
+}
 
-.menu button:hover{
-    border: none;
+.menu a:hover {
+    color: #0874f8;
+    border-bottom: 3px solid #414040;
+}
+
+.menu button:hover {
     background: #414040;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        margin-top: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .menu li button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBar {
+        padding: 10px;
+    }
+
+    .menu li a {
+        font-size: 1rem;
+    }
+
+    .menu li button {
+        font-size: 1rem;
+    }
 }

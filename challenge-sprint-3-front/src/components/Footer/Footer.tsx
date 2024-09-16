@@ -7,23 +7,25 @@ import styles from '../../style/Footer.module.css';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={styles.footerConteiner}>
-                <li>
-                    <Link className={styles.logoFooter} to={"/"}>
-                        <img src={logo_branco} alt="Logo Branco" />
-                    </Link>
-                </li>
-                <p className={styles.barraSeparacao}>|</p>
-                <li>
-                    <a href="https://github.com/GuiRomanholi/Challenge-Front-Sprint3" target="_blank">
-                        <img src={github_logo} alt="GitHub Logo" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src={logo_insta} alt="Instagram Logo" />
-                    </a>
-                </li>
+            <div className={styles.footerContainer}>
+                <ul className={styles.footerMenu}>
+                    <li>
+                        <Link className={styles.logoFooter} to={"/"}>
+                            <img src={logo_branco} alt="Logo Branco" />
+                        </Link>
+                    </li>
+                    <p className={styles.barraSeparacao}>|</p>
+                    <li>
+                        <a href="https://github.com/GuiRomanholi/Challenge-Front-Sprint3" target="_blank" rel="noopener noreferrer">
+                            <img src={github_logo} alt="GitHub Logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src={logo_insta} alt="Instagram Logo" />
+                        </a>
+                    </li>
+                </ul>
             </div>
             <p>&copy; 2024 Consert Car's. Todos os direitos reservados.</p>
         </footer>

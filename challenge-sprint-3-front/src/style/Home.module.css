@@ -1,39 +1,32 @@
-
+/* Estilos principais */
 .section1 {
     display: flex;
-    flex-direction: row; /* Alinha os itens em linha */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    padding-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10vh;
 }
 
 .headline {
-    flex: 1; /* Permite que a div ocupe o máximo de espaço disponível */
-    margin-left: 28px;
+    flex: 1;
+    margin-left: 2rem;
 }
 
 .headline h1 {
     font-weight: 600;
-    font-size: 80px;
+    font-size: 5rem;
     color: #414040;
 }
 
-.h1_1 {
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
-}
-
-.h1_2 {
-    display: inline-block;
-    font-size: 50px;
+.h1_1, .h1_2 {
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
 }
 
 .headline p {
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.6;
     color: #808080;
     max-width: 100%;
@@ -42,22 +35,32 @@
 .btn {
     display: inline-block;
     background: #0874f8;
-    padding: 15px 27px;
+    padding: 1rem 1.7rem;
     color: white;
     border-radius: 5px;
-    border: white;
+    border: none;
     text-decoration: none;
-    margin-top: 20px; /* Espaçamento superior para o botão */
+    margin-top: 1.25rem;
 }
 
 .btn:hover {
-    border: none;
     background: #414040;
 }
 
-.img1 {
-    max-width: 100%;
+.imgHeadline {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0; /* Remover margens à direita */
 }
+
+.imgHeadline img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .section2{
     display: inline-block;
@@ -91,7 +94,7 @@
     color: #414040;
 }
 
-.article{
+.article {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -101,15 +104,140 @@
     margin-bottom: 7%;
 }
 
-.article h2{
+.article h2 {
     font-size: 30px;
     color: #414040;
 }
 
-.article p{
+.article p {
     color: #808080;
     width: 70%;
     padding: 0.5%;
     margin-left: 15%;
     line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .section1 {
+        flex-direction: column;
+        padding-top: 5vh;
+        justify-content: center;
+    }
+
+    .headline {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .imgHeadline {
+        margin-top: 2rem; /* Espaço entre texto e imagem no mobile */
+    }
+
+    .headline h1 {
+        font-size: 3.5rem;
+    }
+
+    .h1_1, .h1_2 {
+        font-size: 2.2rem;
+    }
+
+    .headline p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .headline h1 {
+        font-size: 3rem;
+    }
+
+    .h1_1, .h1_2 {
+        font-size: 1.875rem;
+    }
+
+    .headline p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 0.625rem 1.25rem;
+    }
+
+    .section2 h2 {
+        font-size: 1.125rem;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
+    .article {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .article h2 {
+        font-size: 1.875rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .article p {
+        font-size: 0.875rem; /* Reduz o tamanho da fonte do texto */
+        width: 90%; /* Aumenta a largura do texto */
+        margin-left: 5%; /* Ajusta a margem à esquerda para centrar o texto */
+    }
+}
+
+@media (max-width: 576px) {
+    .headline h1 {
+        font-size: 2rem;
+    }
+
+    .h1_1, .h1_2 {
+        font-size: 1.6rem;
+    }
+
+    .headline p {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .section2 h2 {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
+
+    .article {
+        margin: 0;
+    }
+
+    .article p {
+        width: 100%;
+    }
+    .article {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 5%;
+    }
+
+    .article h2 {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .article p {
+        font-size: 0.75rem; /* Reduz ainda mais o tamanho do texto */
+        width: 100%; /* Faz o texto ocupar toda a largura disponível */
+        margin-left: 0; /* Remove margem extra no mobile */
+    }
 }

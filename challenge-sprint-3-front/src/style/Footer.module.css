@@ -1,45 +1,73 @@
-.footer{
-    height: 250px;
+/* Estilos principais do Footer */
+.footer {
     background-color: #175aac;
     text-align: center;
-    justify-content: center;
+    padding: 20px 0;
+    color: white;
 }
 
-.footerConteiner{
+.footerContainer {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 70px 30px 20px 15px;
+    padding: 20px 0;
 }
 
-.footerConteiner li {
-    list-style-type: none; /* Remove os pontos dos itens da lista */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
-    display: inline; /* Exibe os itens da lista em linha */
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 0;
+    list-style-type: none; /* Remove os marcadores da lista */
 }
 
-.footer img{
+.footerMenu li {
+    margin: 0; /* Remove margem padrão */
+}
+
+.footer img {
     width: 35px;
-    margin-right: 3%;
 }
 
-.logoFooter img{
+.logoFooter img {
     width: 90%;
 }
 
-.footer a{
-    margin: 10px;
-}
-
-.footer p{
+.barraSeparacao {
+    font-size: 1.5rem;
     color: white;
-
 }
 
-.barraSeparacao{
-    width: 40px;
-    font-size: 200%;
+.footer p {
+    margin-top: 20px;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footerMenu {
+        flex-direction: column; /* Alinha os itens verticalmente em telas pequenas */
+        gap: 10px;
+    }
+
+    .barraSeparacao {
+        display: none; /* Remove a barra de separação em telas pequenas */
+    }
+
+    .footer img {
+        width: 30px; /* Reduz o tamanho das imagens */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .footer img {
+        width: 50px; /* Ajusta o tamanho das imagens ainda mais para telas menores */
+    }
+
+    .footer p {
+        font-size: 0.875rem; /* Reduz o tamanho da fonte do texto de direitos autorais */
+    }
 }
