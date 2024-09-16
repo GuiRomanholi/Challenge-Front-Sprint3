@@ -8,6 +8,10 @@
 - Igor Werneck Jacobosque RM: 558395
 - Cristian Caja Rodrigues RM: 558502
 
+## Link para o vídeo
+
+https://www.youtube.com/watch?v=bNYllNNCPQ4
+
 # Projeto de Protótipo no Figma
 
 ## Descrição
