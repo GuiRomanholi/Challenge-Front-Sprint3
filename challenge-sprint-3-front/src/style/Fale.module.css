@@ -1,14 +1,17 @@
+/* Estilos principais */
 .section1 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between; /* Espaçamento adequado entre texto e imagem */
     align-items: center;
     padding-top: 170px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .headline {
-    margin-left: 10%;
-    flex: 40%;
+    flex: 1; /* O texto ocupa metade da largura */
+    margin-right: 2rem;
 }
 
 .headline h1 {
@@ -27,79 +30,160 @@
 }
 
 .imgHeadline {
-    margin-right: 5%;
-    flex: 40%;
+    flex: 1; /* A imagem ocupa metade da largura */
     text-align: right;
-    position: relative;
-    top: 7px;
 }
 
-.img1 {
+.imgHeadline img {
     max-width: 100%;
+    height: auto;
 }
 
+/* Seção de Contato */
 .section2 {
     background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 10%;
 }
 
-.email {
+.email, .whats {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin-left: 10%;
-    padding-top: 7%;
+    margin-bottom: 2rem;
 }
 
-.textEmail {
-    margin-left: 1%;
-    margin-top: 1%;
-    text-align: left;
-}
-
-.whats {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 10%;
-    padding-bottom: 7%;
-}
-
-.textWhats {
-    margin-left: 0.5%;
-    margin-top: 1%;
+.textEmail, .textWhats {
+    margin-left: 1rem;
     text-align: left;
 }
 
 .section2 h2 {
-    padding: 0;
     margin: 0;
     color: #414040;
 }
 
 .section2 p {
-    margin-top: 1%;
+    margin-top: 1rem;
     color: #414040;
 }
 
+/* Estilo do artigo */
 .article {
     text-align: center;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 5% 10%;
 }
 
 .article h2 {
     font-size: 30px;
     color: #414040;
-    padding-top: 7%;
 }
 
 .article p {
-    text-align: center;
     color: #808080;
     width: 70%;
     margin-left: 15%;
     line-height: 1.6;
-    padding-bottom: 7%;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .section1 {
+        flex-direction: column; /* Empilha o texto e a imagem em telas menores */
+        text-align: center;
+    }
+
+    .headline {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .headline h1 {
+        font-size: 2.5rem;
+    }
+
+    .headline p {
+        font-size: 1.125rem;
+    }
+
+    .imgHeadline {
+        text-align: center;
+    }
+
+    .section2 {
+        padding: 5% 8%;
+    }
+
+    .email, .whats {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .headline h1 {
+        font-size: 2rem;
+    }
+
+    .headline p {
+        font-size: 1rem;
+    }
+
+    .section2 h2 {
+        font-size: 1.75rem;
+    }
+
+    .email, .whats {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textEmail, .textWhats {
+        margin-left: 0;
+    }
+
+    .article h2 {
+        font-size: 1.875rem;
+    }
+
+    .article p {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .headline h1 {
+        font-size: 1.5rem;
+    }
+
+    .headline p {
+        font-size: 0.875rem;
+    }
+
+    .imgHeadline img {
+        width: 80%; /* Reduz o tamanho da imagem em dispositivos menores */
+        margin: 0 auto;
+    }
+
+    .section2 {
+        padding: 5% 5%;
+    }
+
+    .section2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .article h2 {
+        font-size: 1.5rem;
+    }
+
+    .article p {
+        width: 100%;
+        margin-left: 0;
+    }
 }
