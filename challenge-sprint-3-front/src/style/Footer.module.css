@@ -45,29 +45,3 @@
     color: white;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .footerMenu {
-        flex-direction: column; /* Alinha os itens verticalmente em telas pequenas */
-        gap: 10px;
-    }
-
-    .barraSeparacao {
-        display: none; /* Remove a barra de separação em telas pequenas */
-    }
-
-    .footer img {
-        width: 30px; /* Reduz o tamanho das imagens */
-    }
-}
-
-@media (max-width: 576px) {
-
-    .footer img {
-        width: 50px; /* Ajusta o tamanho das imagens ainda mais para telas menores */
-    }
-
-    .footer p {
-        font-size: 0.875rem; /* Reduz o tamanho da fonte do texto de direitos autorais */
-    }
-}
