@@ -1,4 +1,4 @@
-/* Estilos principais */
+
 .navBar {
     top: 0;
     left: 0;
@@ -44,7 +44,7 @@
     font-size: 1rem;
 }
 
-/* Estilo específico para o item "Iniciar Sessão" */
+
 .menu li.login a {
     background-color: #007bff;
     color: #fff;
@@ -56,7 +56,7 @@
     border-bottom: none;
 }
 
-/* Hover effects para os demais links */
+
 .menu a {
     color: #0056b3;
 }
@@ -66,7 +66,7 @@
     border-bottom: 3px solid #414040;
 }
 
-/* Responsividade */
+
 @media (max-width: 979px) {
     .navBar {
         flex-direction: column;

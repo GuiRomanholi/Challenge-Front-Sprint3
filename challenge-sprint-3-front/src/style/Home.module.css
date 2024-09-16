@@ -1,4 +1,4 @@
-/* Estilos principais */
+
 .section1 {
     display: flex;
     flex-direction: row;
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0; /* Remover margens à direita */
+    margin-right: 0;
 }
 
 .imgHeadline img {
@@ -119,7 +119,7 @@
     line-height: 1.6;
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
     .section1 {
         flex-direction: column;
@@ -133,7 +133,7 @@
     }
 
     .imgHeadline {
-        margin-top: 2rem; /* Espaço entre texto e imagem no mobile */
+        margin-top: 2rem;
     }
 
     .headline h1 {
@@ -184,13 +184,13 @@
     }
 
     .article h2 {
-        font-size: 1.875rem; /* Reduz o tamanho da fonte do título */
+        font-size: 1.875rem;
     }
 
     .article p {
-        font-size: 0.875rem; /* Reduz o tamanho da fonte do texto */
-        width: 90%; /* Aumenta a largura do texto */
-        margin-left: 5%; /* Ajusta a margem à esquerda para centrar o texto */
+        font-size: 0.875rem;
+        width: 90%;
+        margin-left: 5%;
     }
 }
 
